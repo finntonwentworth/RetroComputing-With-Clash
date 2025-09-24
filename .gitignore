@@ -1,4 +1,6 @@
 *_env*
 outputs/
-*.ho
+*.o
 *.hi
+verilog/
+
