@@ -1,0 +1,8 @@
+# example pin constraints 
+# modify for your project 
+
+#set_io CLK_IN 21
+#set_io -pullup yes SWITCHES[0] 87 
+#set_io LED1 99
+#set_io LED2 98
+#set_io LED3 97

@@ -1,0 +1,76 @@
+{
+    "components": [
+        "topEntity"
+    ],
+    "dependencies": {
+        "transitive": []
+    },
+    "domains": {
+        "IntelSystem": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Asynchronous",
+            "reset_polarity": "ActiveHigh"
+        },
+        "System": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Asynchronous",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Synchronous",
+            "reset_polarity": "ActiveHigh"
+        }
+    },
+    "files": [
+        {
+            "name": "topEntity.v",
+            "sha256": "a41a91930e14df2203de634056d2d4cdd081e8309133ed2406e8b30215cda76d"
+        }
+    ],
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "bbbf50f2e1d7e842c3233101072b6e98b663109f86234081b577dee59d61e2b2",
+    "top_component": {
+        "name": "topEntity",
+        "ports_flat": [
+            {
+                "direction": "in",
+                "is_clock": false,
+                "name": "SWITCHES",
+                "type_name": "[3:0]",
+                "width": 4
+            },
+            {
+                "direction": "out",
+                "is_clock": false,
+                "name": "SS_CAT",
+                "type_name": "[3:0]",
+                "width": 4
+            },
+            {
+                "direction": "out",
+                "is_clock": false,
+                "name": "SS_SEG",
+                "type_name": "[6:0]",
+                "width": 7
+            },
+            {
+                "direction": "out",
+                "is_clock": false,
+                "name": "SS_DP",
+                "type_name": "",
+                "width": 1
+            }
+        ]
+    },
+    "version": "unstable"
+}
