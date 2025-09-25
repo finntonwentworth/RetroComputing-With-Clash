@@ -9,3 +9,5 @@
 
 set_io CLK 21
 set_io -pullup yes LED 95
+
+set_io -pullup yes BTN 87

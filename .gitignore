@@ -1,6 +1,5 @@
-*_env*
-outputs/
+*-env*
+outputs/*
 *.o
 *.hi
 verilog/
-

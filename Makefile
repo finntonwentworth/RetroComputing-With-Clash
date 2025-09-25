@@ -2,20 +2,26 @@
 MMDD_DATE := $(shell date "+%Y-%m-%d")
 PROJECT ?= project_$(MMDD_DATE)
 
-SAMPLE_PROJ ?= default.hs
-CONSTRAINTS ?= icestick_constraints.pcf
-OUTPUT_NAME ?= output
+SAMPLE_PROJ   ?= default.hs
+SAMPLE_LIB    ?= Utils.hs
+CONSTRAINTS   ?= icestick_constraints.pcf
+OUTPUT_NAME   ?= output
 
 # create a new directory with Makefile and default contents in it
 new: 
 	@mkdir $(PROJECT)
 	@echo "Creating new project directory: $(PROJECT)"
+	# Place makefile in new project for running build commands 
 	@cp ./Makefile ./$(PROJECT)
+	# make standard directories with default files 
 	@mkdir ./$(PROJECT)/src
+	@mkdir ./$(PROJECT)/src/RetroClash
 	@cp ./samples/$(SAMPLE_PROJ) ./$(PROJECT)/src/$(PROJECT).hs
+	@cp ./samples/Lib/Retroclash/$(SAMPLE_LIB) ./$(PROJECT)/src/RetroClash/$(SAMPLE_LIB)
 	@mkdir ./$(PROJECT)/outputs
 	@mkdir ./$(PROJECT)/constraint_files
 	@cp ./samples/$(CONSTRAINTS) ./$(PROJECT)/constraint_files/constraints.pcf
+	@cp ./samples/.clashi ./$(PROJECT)/.clashi
 
 #synthesize design with yosys for ice40
 synth_ice40: 

@@ -13,7 +13,7 @@ import Clash.Explicit.Prelude hiding (
   Nanoseconds,
   Picoseconds,
  )
-import Lib.RetroClash.Utils
+--import Lib.RetroClash.Utils
 
 createDomain vSystem{vName = "Dom12", vPeriod = hzToPeriod 12_000_000}
 

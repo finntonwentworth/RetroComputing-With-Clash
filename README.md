@@ -1,9 +1,14 @@
-## Retrocomputing with Clash exercises and work
+## Retrocomputing with Clash- Exercises and Work
 
-Additionally contains makefile I created for synthesizing, routing, and flashing
-design onto icestick, with other functionality Will be updated with further
-functionality
+Additionally contains Makefile I created for synthesizing, routing, and flashing
+design onto icestick, with other functionality
 
-Currently using clash-compiler [] nix flake yosys [] nextpnr []
+Will be updated with further functionality/features
 
-during development
+Currently using during development
+
+clash-compiler (nix flake) []
+
+yosys []
+
+nextpnr []
