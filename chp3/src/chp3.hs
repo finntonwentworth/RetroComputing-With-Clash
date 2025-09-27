@@ -35,9 +35,7 @@ showSS (a :> b :> c :> d :> e :> f :> g :> Nil) = unlines . L.concat $
   , L.replicate 3 $ vert   e c
   , L.replicate 1 $ horiz   d 
   ]
-  where 
-    horiz True  = " ##### "
-    horiz False = " ..... "
+  where horiz True  = " ##### " horiz False = " ..... "
 
     vert b1 b2 = part b1 <> "     " <> part b2 
       where 

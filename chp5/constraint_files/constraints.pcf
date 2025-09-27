@@ -1,0 +1,36 @@
+# example pin constraints 
+# modify for your project 
+
+#set_io CLK_IN 21
+#set_io -pullup yes SWITCHES[0] 87 
+#set_io LED1 99
+#set_io LED2 98
+#set_io LED3 97
+#
+
+set_io SYS_CLK 21
+
+set_io -pullup yes SS_CAT[0] 119
+set_io -pullup yes SS_CAT[1] 118
+set_io -pullup yes SS_CAT[2] 117
+set_io -pullup yes SS_CAT[3] 116
+
+set_io -pullup yes SW[0] 45
+set_io -pullup yes SW[1] 47
+set_io -pullup yes SW[2] 48
+set_io -pullup yes SW[3] 56
+set_io -pullup yes SW[4] 60
+set_io -pullup yes SW[5] 61
+set_io -pullup yes SW[6] 62
+set_io -pullup yes SW[7] 112
+
+
+set_io SS_SEG[0] 88
+set_io SS_SEG[1] 90
+set_io SS_SEG[2] 91
+set_io SS_SEG[3] 78
+set_io SS_SEG[4] 79
+set_io SS_SEG[5] 80
+set_io SS_SEG[6] 81
+
+set_io -pullup yes SS_DP 113 
