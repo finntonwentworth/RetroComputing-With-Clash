@@ -1,0 +1,31 @@
+# example pin constraints 
+# modify for your project 
+
+#set_io CLK_IN 21
+#set_io -pullup yes SWITCHES[0] 87 
+#set_io LED1 99
+#set_io LED2 98
+#set_io LED3 97
+#
+
+# select active column
+set_io -pullup yes SWITCHES[0] 44
+set_io -pullup yes SWITCHES[1] 45
+set_io -pullup yes SWITCHES[2] 47
+set_io -pullup yes SWITCHES[3] 48
+
+set_io -pullup yes LEDS[0] 96
+set_io -pullup yes LEDS[1] 97
+set_io -pullup yes LEDS[2] 99
+set_io -pullup yes LEDS[3] 98
+
+set_io -pullup yes COLS[0] 119
+set_io -pullup yes COLS[1] 118
+set_io -pullup yes COLS[2] 117
+set_io -pullup yes COLS[3] 116
+
+set_io ROWS[0] 115
+set_io ROWS[1] 114
+set_io ROWS[2] 113
+set_io ROWS[3] 112
+

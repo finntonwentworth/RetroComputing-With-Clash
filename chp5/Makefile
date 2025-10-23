@@ -19,7 +19,7 @@ new:
 	@cp ./samples/Lib/Retroclash/$(SAMPLE_LIB) ./$(PROJECT)/src/RetroClash/$(SAMPLE_LIB)
 	@mkdir ./$(PROJECT)/outputs
 	@mkdir ./$(PROJECT)/constraint_files
-	@cp ./samples/$(CONSTRAINTS) ./$(PROJECT)/constraint_files/constraints.pcf
+	@cp ./samples/$(CONSTRAINTS) ./$(PROJECT)/constraint_files/$(CONSTRAINTS)
 	@cp ./samples/.clashi ./$(PROJECT)/.clashi
 
 #synthesize design with yosys for ice40
@@ -40,7 +40,7 @@ show:
 #run nextpnr for ice40
 pnr: 
 	@echo "Running Place and Route"
-	nextpnr-ice40  --json ./outputs/$(OUTPUT_NAME).json --hx1k --package tq144 --pcf ./constraint_files/constraints.pcf --asc ./outputs/$(OUTPUT_NAME).asc
+	nextpnr-ice40  --json ./outputs/$(OUTPUT_NAME).json --hx1k --package tq144 --pcf $(CONSTRAINTS)
 
 #generate binary bitstream
 bitstream: 

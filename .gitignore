@@ -3,3 +3,4 @@ outputs/*
 *.o
 *.hi
 verilog/
+*.json
